@@ -8,15 +8,23 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.amber,
           title: const Text('Personal Expenses'),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Card(
+              color: Colors.amber,
               elevation: 5,
-              child: Text('I will be a chart'),
+              child: Container(
+                width: double.infinity,
+                child: Text('I will be a chart'),
+              ),
             ),
             Card(
+              color: Colors.green,
               child: Text('I will be a list of cards'),
             )
           ],
