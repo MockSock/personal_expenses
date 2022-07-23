@@ -13,8 +13,12 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: <Widget>[
             Card(
-              child: Text('I will be a card that holds info'),
+              elevation: 5,
+              child: Text('I will be a chart'),
             ),
+            Card(
+              child: Text('I will be a list of cards'),
+            )
           ],
         ),
       ),
