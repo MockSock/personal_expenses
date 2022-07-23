@@ -12,10 +12,13 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Personal Expenses'),
         ),
-        body: Center(
-            child: Container(
-          child: Text('I will be an app soon!'),
-        )),
+        body: Column(
+          children: <Widget>[
+            Card(
+              child: Text('I will be a card that holds info'),
+            ),
+          ],
+        ),
       ),
     );
   }
